@@ -19,6 +19,7 @@
 
   // Test 5: will identfy if the users inputted number contains a 3 and converts it to "Won't you be my neighbor?".
   // Expect: (neighborhood(6)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6);
+  // PASSED
 
   // Test 6: will return in order of 3 taking priority over 2 and 2 taking priority over 1.
   // Expect: (neighborhood(13)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, Beep, Boop, "Won't you be my neighbor?");
@@ -36,24 +37,50 @@ userInput.forEach(function(number) {
   if (isNaN(number)){
     alert("Whoops! Looks like you forgot to enter a number or you entered letters. Please try again.");
   }
+  else if (number.indexOf('3') > -1) {
+    userInput[r] = "Won't you be my neighbor?";
+  }
   else if (number.indexOf('2') > -1) {
     userInput[r] = "Boop!";
   }
-    else if (number.indexOf('1') > -1) {
-      userInput[r] = "Beep!";
-    }
+  else if (number.indexOf('1') > -1) {
+    userInput[r] = "Beep!";
+  }
     else {}
     r++
   })
     stringResult = userInput.join(", "); 
     return stringResult;
   }
-
+  
+// Test 5: PASSED - 3 and converts it to "Won't you be my neighbor?"
+// console.log returned:
+neighborhood("23")
+"0, Beep!, Boop!, Won't you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Won't you be my neighbor?, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Won't you be my neighbor?"
 
   // Test 4: PASSED - contains a 2 and converts it to "Boop"
-  // console.log returned:
-  neighborhood("23")
-"0, Beep!, Boop!, 3, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Beep!, Boop!, Boop!, Boop!, Boop!"
+  // function neighborhood (numeral) {
+  //   let userInput = [];
+  //   for (let i = 0; i <= numeral; i++) {
+  //     userInput.push(i.toString());
+  // }
+  // let r = 0;
+  // userInput.forEach(function(number) {
+  //   if (isNaN(number)){
+  //     alert("Whoops! Looks like you forgot to enter a number or you entered letters. Please try again.");
+  //   }
+  //   else if (number.indexOf('2') > -1) {
+  //     userInput[r] = "Boop!";
+  //   }
+  //     else if (number.indexOf('1') > -1) {
+  //       userInput[r] = "Beep!";
+  //     }
+  //     else {}
+  //     r++
+  //   })
+  //     stringResult = userInput.join(", "); 
+  //     return stringResult;
+  //   }
 
   // Test 3: PASSED
 // function neighborhood (numeral) {
