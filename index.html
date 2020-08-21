@@ -12,27 +12,40 @@
 <body>
   <div class="container">
     <div class="group-std">
-      <h1>Would you like a letter from Mr. Rodgers with a secret message!</h1>
-      <!-- <img src="img/TBD.jpg" alt="TBD"><br> -->
+      <img src="img/NofBM.jpeg" alt="The Neighborhood of Make Believe"><br>
+      <h1>Mr. Rodgers has a letter for you from the Neighborhood of Make-Believe!</h1>
       <form id="neighborhoodForm">
+        <div class="form-group">
+          <label for="userName">Enter your name:</label>
+          <input id="userName" class="form-control" type="text">
+        </div>
         <div class="form-group">
           <label for="userInput">Enter a number:</label>
           <input id="userInput" class="form-control" type="text">
         </div>
         <button type="submit" class="btn btn-primary">You've got mail!</button>
       </form>
-      <!-- <div id="translate">
-        <h4 class="output"></h4>
-      </div> -->
       <div class="row">
         <div class="col-md-9 mx-auto">
           <br>
           <hr>
-          <h4 id="translate">Your letter has arrived!</h4>
-          <br>
+          <div id="translate">
+          <p>Hello<span id="userName"></span>,</p>
           <p id= "returnPar" class="lead"></p>
+          <p>Sincerly,</p>
+          <p><em>Lady Elaine Fairchilde</em></p>
         </div>
     </div>
   </div>
 </body>
 </html>
+
+<!-- <div class="row">
+  <div class="col-md-9 mx-auto">
+    <br>
+    <hr>
+    <h4 id="translate"></h4>
+    <br>
+    <p id= "returnPar" class="lead"></p>
+  </div>
+</div> -->

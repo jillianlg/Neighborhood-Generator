@@ -18,7 +18,7 @@ _This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and 
 | 4 |**The program will identfy if the users inputted number contains a 2 and convert it to "Boop".** | User input: "26" | Output: "Boop" |
 | 5 |**The program will identfy if the users inputted number contains a 3 and convert it to "Won't you be my neighbor?".** | User input: "30" | Output: "Won't you be my neighbor?" |
 | 6 |**The program will return an output in order of priority with 3 taking priority over 2 and 2 taking priority over 1.** | User input: "13" | Output: "Won't you be my neighbor?" |
-| 7 |**The program will return user input intertwinded with text.** | User input: "4" | Page Display: "0, Beep, Boop, Won't you be my neighbor?, 4" |
+| 7 |**The program will.** | User input: "4" | Page Display: "0, Beep, Boop, Won't you be my neighbor?, 4" |
 
 ## Test Driven Development:
 * _Describe: neighborhood()_

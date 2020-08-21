@@ -25,16 +25,27 @@ userInput.forEach(function(number) {
     stringResult = userInput.join(", "); 
     return stringResult;
   }
-  
-  $("#translate").hide();
-  $("#translate").show();
+
+  // $("#translate").hide();
+  // $("#translate").show();
 
 // // User Interface 
 $(document).ready(function(){
   $("#neighborhoodForm").submit(function(event){
     event.preventDefault();
+    const nameInput = $("#userName").val();
     const numberInput = parseInt($("#userInput").val());
-    $("#returnPar").append(neighborhood(numberInput)+ "  ");
+    $("#translate").show();
+    $("#userName").text(nameInput);
+    $("#returnPar").text(neighborhood(numberInput)+ "  ");
   });
 });
 
+// This Works:
+// $(document).ready(function(){
+//   $("#neighborhoodForm").submit(function(event){
+//     event.preventDefault();
+//     const numberInput = parseInt($("#userInput").val());
+//     $("#returnPar").append(neighborhood(numberInput)+ "  ");
+//   });
+// });
