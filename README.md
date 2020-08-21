@@ -1,12 +1,12 @@
 # _Neighborhood Generator_
 
-#### _Application takes user numerical input and outputs a range of numbers intertwinded with text., DATE.2020_
+#### _Application takes user numerical input and outputs a range of numbers intertwinded with text., 08.21..2020_
 
 #### By _**Jillian Gibson**_
 
 ## Description
 
-_This HTML demonstrates the fundamental understanding of...._
+_This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and DRY Methodology by converting the users numerical input and outputing a range of numbers intertwinded with sayings from Mr. Roboger's Neighborhood._
 
 ## Specs
 | Spec | Input | Output |
