@@ -12,18 +12,26 @@
 <body>
   <div class="container">
     <div class="group-std">
-      <h1>Get a secret message for Mr. Rodgers!</h1>
+      <h1>Would you like a letter from Mr. Rodgers with a secret message!</h1>
       <!-- <img src="img/TBD.jpg" alt="TBD"><br> -->
-      <form id="formOne">
+      <form id="neighborhoodForm">
         <div class="form-group">
           <label for="userInput">Enter a number:</label>
           <input id="userInput" class="form-control" type="text">
         </div>
-        <button type="submit" class="btn btn-primary">Transform!</button>
+        <button type="submit" class="btn btn-primary">You've got mail!</button>
       </form>
-      <div id="translate">
+      <!-- <div id="translate">
         <h4 class="output"></h4>
-      </div>
+      </div> -->
+      <div class="row">
+        <div class="col-md-9 mx-auto">
+          <br>
+          <hr>
+          <h4 id="translate">Your letter has arrived!</h4>
+          <br>
+          <p id= "returnPar" class="lead"></p>
+        </div>
     </div>
   </div>
 </body>
