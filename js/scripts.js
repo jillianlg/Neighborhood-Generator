@@ -23,19 +23,32 @@
 
 // Business Interface
 
- //Test 2 - return a range of numbers from 0
- function neighborhood (number) {
+ //Test 3 - If users inputted number contains a 1 convert it to "Beep"
+ function neighborhood (numeral) {
   let userInput = [];
+  for (let i = 0; i <= numeral; i++) {
+    userInput.push(i.toString());
+}
+let r = 0;
+userInput.forEach(function(number) {
   if (isNaN(number)){
     alert("Whoops! Looks like you forgot to enter a number or you entered letters. Please try again.");
-  } else {
-    for (let i = 0; i <= number; i++) {
-      userInput.push(i);
-    };
+  }
+    else if (number.indexOf('1') > -1) {
+      userInput[r] = "Beep!";
+    }
+    else {}
+    r++
+  })
     stringResult = userInput.join(", "); 
     return stringResult;
-  };
-};
+  }
+
+// Test 3: PASSED
+console.log returned:
+neighborhood("11")
+"0, Beep!, 2, 3, 4, 5, 6, 7, 8, 9, Beep!, Beep!"
+
 // Test 2: PASSED
 // function neighborhood (number) {
 //   let userInput = [];
@@ -68,5 +81,3 @@
 
 
 // User Interface
-
-//Test 2 - 
