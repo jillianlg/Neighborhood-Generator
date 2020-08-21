@@ -1,31 +1,20 @@
 // Test Driven Development:
-  // Test: returns a range of numbers from 0 to the users inputted number.
-  // Input: 5
-  // Output: "0, 1, 2, 3, 4, 5"
+  // Describe: neighborhood()
+  // Test 1: "return a range of numbers from 0 to the users inputted number.
+  // Expect: (neighborhood(5)).toEqual(0, 1, 2, 3, 4, 5);
   
-  // Test: splits the user inputed number from a string of numbers to a range of individual strings.
-  // Input: 5
-  // Output: "1","2","3","4","5"
+  // Test 2: "If users inputted number contains a 1 convert it to "Beep".
+  // Expect: (neighborhood(11)).toEqual(0, Beep, 2, 3, 4, 5, 6, 7, 8, 9, 10, Beep);
 
-  // Test: will identfy all "3" and convert them to "Won't you be my neighbor?".
-  // Input: 13
-  // Output: "1","2","Won't you be my neighbor?","4","..."12", "Won't you be my neighbor?"
+  // Test 3: will identfy if the users inputted number contains a 2 and converts it to "Boop".
+  // Expect: (neighborhood(12)).toEqual(0, Beep, Boop, 3, 4, 5, 6, 7, 8, 9, 10, Beep, Boop);
 
-  // Test: will identfy "12" and convert it to "boop"
-  // Input: 12
-  // Output: "1","2","3"..."10","11","Boop"
+  // Test 4: will identfy if the users inputted number contains a 3 and converts it to "Won't you be my neighbor?".
+  // Expect: (neighborhood(6)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6);
 
-  // Test: will identfy all "2" and convert them to "boop" unless the inputed number includes a combinded number such as "23" or "32".
-  // Input: 12345
-  // Output: "1","Boop","3","4","5"
+  // Test 5: will return in order of 3 taking priority over 2 and 2 taking priority over 1.
+  // Expect: (neighborhood(13)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, Beep, Boop, "Won't you be my neighbor?");
 
-  // Test: will identfy all "1" and convert them to "beep", unless the inputed number includes combinded number such as "12" or "13".
-  // Input: 5
-  // Output: "Beep","2","3","4","5"
-
-  // Test: will allow user to clear results and imput a new number
-  // Input:
-  // Output:
 
 // Business Interface
 
