@@ -3,9 +3,11 @@
   // Test 1: "return alert for invalid number"
   // Expect: (neighborhood()).toEqual("Whoops!..."");
   // Expect: (neighborhood("seven")).toEqual("Whoops!..."");
+  // PASSED
   
   // Test 2: "return a range of numbers from 0 to the users inputted number.
   // Expect: (neighborhood(5)).toEqual(0, 1, 2, 3, 4, 5);
+  // PASSED
   
   // Test 3: "If users inputted number contains a 1 convert it to "Beep".
   // Expect: (neighborhood(11)).toEqual(0, Beep, 2, 3, 4, 5, 6, 7, 8, 9, 10, Beep);
@@ -21,16 +23,44 @@
 
 // Business Interface
 
-//Test 1 - PASSED
-function neighborhood (number) {
+ //Test 2 - return a range of numbers from 0
+ function neighborhood (number) {
   let userInput = [];
   if (isNaN(number)){
-    alert("Whoops! Looks like you forgot to enter a number your you entered letters. Please try again.");
+    alert("Whoops! Looks like you forgot to enter a number or you entered letters. Please try again.");
   } else {
-    return ("ok range!");
-  }
- }
+    for (let i = 0; i <= number; i++) {
+      userInput.push(i);
+    };
+    stringResult = userInput.join(", "); 
+    return stringResult;
+  };
+};
+// Test 2: PASSED
+// function neighborhood (number) {
+//   let userInput = [];
+//   if (isNaN(number)){
+//     return ("alert");
+//   } else {
+//     for (let i = 0; i <= number; i++) {
+//       userInput.push(i);
+//     };
+//     stringResult = userInput.join(", "); 
+//     return stringResult;
+//   };
+// };
+
+//Test 1 - PASSED
+// function neighborhood (number) {
+//   let userInput = [];
+//   if (isNaN(number)){
+//     alert("Whoops! Looks like you forgot to enter a number your you entered letters. Please try again.");
+//   } else {
+//     return ("ok range!");
+//   }
+//  }
  
+
 
 
 
