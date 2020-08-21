@@ -1,5 +1,4 @@
 // Business Interface
-
  function neighborhood (numeral) {
   let userInput = [];
   for (let i = 0; i <= numeral; i++) {
@@ -26,9 +25,6 @@ userInput.forEach(function(number) {
     return stringResult;
   }
 
-  // $("#translate").hide();
-  // $("#translate").show();
-
 // // User Interface 
 $(document).ready(function(){
   $("#neighborhoodForm").submit(function(event){
@@ -40,12 +36,3 @@ $(document).ready(function(){
     $("#returnPar").text(neighborhood(numberInput)+ "  ");
   });
 });
-
-// This Works:
-// $(document).ready(function(){
-//   $("#neighborhoodForm").submit(function(event){
-//     event.preventDefault();
-//     const numberInput = parseInt($("#userInput").val());
-//     $("#returnPar").append(neighborhood(numberInput)+ "  ");
-//   });
-// });
