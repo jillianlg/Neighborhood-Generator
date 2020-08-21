@@ -12,15 +12,20 @@ _This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and 
 | Spec | Description | Input | Output |
 | :-------------     | :------------- | :------------- |
 | **Homepage** | User accesses localhost:5004 | Homepage with user input form |
-| 1 |**The program will return a range of numbers from 0 to the users inputted number** | User input: "5" | Output: "0, 1, 2, 3, 4, 5" |
-| 2 |**The program will identfy if the users inputted number contains a 1 and convert it to "Beep".** | User input: "11" | Output: "Beep" |
-| 3 |**The program will identfy if the users inputted number contains a 2 and convert it to "Boop".** | User input: "26" | Output: "Boop" |
-| 4 |**The program will identfy if the users inputted number contains a 3 and convert it to "Won't you be my neighbor?".** | User input: "30" | Output: "Won't you be my neighbor?" |
-| 5 |**The program will return an output in order of priority with 3 taking priority over 2 and 2 taking priority over 1.** | User input: "13" | Output: "Won't you be my neighbor?" |
-| 6 |**The program will return user input intertwinded with text.** | User input: "4" | Page Display: "0, Beep, Boop, Won't you be my neighbor?, 4" |
+| 1 |**The program will return a prompt if the user input is Nan.** | User input: "seven" | Output: "Whoops!..." |
+| 2 |**The program will return a range of numbers from 0 to the users inputted number** | User input: "5" | Output: "0, 1, 2, 3, 4, 5" |
+| 3 |**The program will identfy if the users inputted number contains a 1 and convert it to "Beep".** | User input: "11" | Output: "Beep" |
+| 4 |**The program will identfy if the users inputted number contains a 2 and convert it to "Boop".** | User input: "26" | Output: "Boop" |
+| 5 |**The program will identfy if the users inputted number contains a 3 and convert it to "Won't you be my neighbor?".** | User input: "30" | Output: "Won't you be my neighbor?" |
+| 6 |**The program will return an output in order of priority with 3 taking priority over 2 and 2 taking priority over 1.** | User input: "13" | Output: "Won't you be my neighbor?" |
+| 7 |**The program will return user input intertwinded with text.** | User input: "4" | Page Display: "0, Beep, Boop, Won't you be my neighbor?, 4" |
 
 ## Test Driven Development:
 * _Describe: neighborhood()_
+
+* _Test 1: "Return alert for invalid number"_
+* _Expect: (neighborhood("seven")).toEqual("Whoops!..."");_
+* _Expect: (neighborhood()).toEqual("Whoops!..."");_
 
 * _Test 1: "Return a range of numbers from 0 to the users inputted number."_
 * _Expect: (neighborhood(5)).toEqual(0, 1, 2, 3, 4, 5);_
