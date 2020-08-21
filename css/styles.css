@@ -8,11 +8,24 @@
   display: none;
 }
 
+body {
+  background-color: rgb(186, 47, 47);
+}
+
 .center {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 40%;
+}
+
+.jumbotron {
+  background-color: rgb(47, 130, 194);
+  font-weight: bolder;
+  padding: 50px;
+}
+.btn{
+  background-color: rgb(47, 130, 194);
 }
 
 p.img-lef {
