@@ -15,7 +15,29 @@
   // Test 5: will return in order of 3 taking priority over 2 and 2 taking priority over 1.
   // Expect: (neighborhood(13)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, Beep, Boop, "Won't you be my neighbor?");
 
-
 // Business Interface
+
+//Test 1 - alert for non valid number
+function neighborhood (number) {
+  let userInput = [];
+  if (isNaN(number)){
+    return("Whoops! Looks like you forgot to enter a number your you entered letters. Please try again.");
+  } else {
+    return ("ok range!");
+  }
+ }
+//Test 1 - passed
+// console.log output:
+// neighborhood("seven")
+// "Whoops! Looks like you forgot to enter a number your you entered letters. Please try again."
+// neighborhood(   )
+// "Whoops! Looks like you forgot to enter a number your you entered letters. Please try again."
+// neighborhood("34")
+// "ok range!"  
+
+
+
+
+
 
 // User Interface
