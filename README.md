@@ -21,25 +21,25 @@ _This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and 
 | 7 |**The program will.** | User input: "4" | Page Display: "0, Beep, Boop, Won't you be my neighbor?, 4" |
 
 ## Test Driven Development:
-* _Describe: neighborhood()_
+* Describe: neighborhood()
 
-* _Test 1: "Return alert for invalid number"_
+* Test 1: "Return alert for invalid number"
 * _Expect: (neighborhood("seven")).toEqual("Whoops!..."");_
 * _Expect: (neighborhood()).toEqual("Whoops!..."");_
 
-* _Test 1: "Return a range of numbers from 0 to the users inputted number."_
-* _Expect: (neighborhood(5)).toEqual(0, 1, 2, 3, 4, 5);_
+* Test 1: "Return a range of numbers from 0 to the users inputted number."_
+* _Expect: (neighborhood(5)).toEqual(0, 1, 2, 3, 4, 5);
 
-* _Test 2: "If users inputted number contains a 1 convert it to 'Beep'"._
+* Test 2: "If users inputted number contains a 1 convert it to 'Beep'".
 * _Expect: (neighborhood(11)).toEqual(0, Beep, 2, 3, 4, 5, 6, 7, 8, 9, 10, Beep);_
 
-* _Test 3: If users inputted number contains a 2 convert it to 'Boop'"._
-* _Expect: (neighborhood(12)).toEqual(0, Beep, Boop, 3, 4, 5, 6, 7, 8, 9, 10, Beep, Boop);_
+* Test 3: If users inputted number contains a 2 convert it to 'Boop'"._
+* _Expect: (neighborhood(12)).toEqual(0, Beep, Boop, 3, 4, 5, 6, 7, 8, 9, 10, Beep, Boop);
 
-* _Test 4: "If users inputted number contains a 3 convert it to 'Won't you be my neighbor?'"._
+* Test 4: "If users inputted number contains a 3 convert it to 'Won't you be my neighbor?'".
 * _Expect: (neighborhood(6)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6);_
 
-* _Test 5: "Return in order of 3 taking priority over 2 and 2 taking priority over 1."_
+* Test 5: "Return in order of 3 taking priority over 2 and 2 taking priority over 1."
 * _Expect: (neighborhood(13)).toEqual(0, Beep, Boop, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 10, Beep, Boop, "Won't you be my neighbor?");_
 
 ## Setup/Installation Requirements
@@ -47,12 +47,12 @@ _This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and 
 * _Clone down repository from Git Hub to machine._
 * _Navigate to root directory._
 * _Open index.html in text editor to view code._
-* _Launch index.html to in browser to display or view via [ghpages](TBD)._
+* _Launch index.html to in browser to display._
 
 
 ## Known Bugs
 
-_No known bugs._
+_No know bugs_
 
 ## Support and contact details
 

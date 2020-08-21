@@ -7,3 +7,15 @@
 #translate {
   display: none;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+p.img-lef {
+  width: 15%;
+  float: inline;
+}

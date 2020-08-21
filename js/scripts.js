@@ -36,7 +36,7 @@ $(document).ready(function(){
     const nameInput = $("#userName").val();
     const numberInput = parseInt($("#userInput").val());
     $("#translate").show();
-    $("#userName").text(nameInput);
+    $(".userName").text(nameInput);
     $("#returnPar").text(neighborhood(numberInput)+ "  ");
   });
 });
