@@ -10,7 +10,7 @@ _This HTML demonstrates the fundamental understanding of Arrays, Loops, TDD and 
 
 ## Specs
 | Spec | Description | Input | Output |
-| :-------------     | :------------- | :------------- |
+| :-------------     | :------------- | :------------- |:------------- |
 | **Homepage** | User accesses localhost:5004 | Homepage with user input form |
 | 1 |**The program will return a prompt if the user input is Nan.** | User input: "seven" | Output: "Whoops!..." |
 | 2 |**The program will return a range of numbers from 0 to the users inputted number** | User input: "5" | Output: "0, 1, 2, 3, 4, 5" |
